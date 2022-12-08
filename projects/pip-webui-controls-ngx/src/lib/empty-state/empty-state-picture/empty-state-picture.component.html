@@ -1,0 +1,2 @@
+<img [src]="srcSanitized" [alt]="alt" *ngIf="src && !src.endsWith('svg')" />
+<object class="pip-pic" type="image/svg+xml" [data]="srcSanitized" *ngIf="src && src.endsWith('svg')"></object>

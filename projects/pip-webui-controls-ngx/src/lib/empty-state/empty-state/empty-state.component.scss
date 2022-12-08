@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ::ng-deep {
+    pip-empty-state-title{
+      margin-top: 50px;
+    }
+    pip-empty-state-description{
+      margin-top: 16px;
+    }
+    .mat-divider{
+      margin-bottom: 16px;
+    }
+    pip-empty-state-actions {
+      margin-top: 32px;
+    }
+  }
+}

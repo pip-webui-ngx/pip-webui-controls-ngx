@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  margin-right: 54px;
+  margin-left: 24px;
+}
+
+:host-context(.pip-main-xs .pip-jumbotron), :host-context(.pip-main-sm .pip-jumbotron) {
+  .pip-jumbotron-picture {
+    margin: 0 auto 0px;
+    width: 100%;
+    text-align: center;
+  }
+}

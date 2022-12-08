@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "pip-webui2-controls": [
-        "dist/pip-webui2-controls"
+      "pip-webui-controls-ngx": [
+        "dist/pip-webui-controls-ngx"
       ],
-      "pip-webui2-controls/*": [
-        "dist/pip-webui2-controls/*"
+      "pip-webui-controls-ngx/*": [
+        "dist/pip-webui-controls-ngx/*"
       ]
     }
   }

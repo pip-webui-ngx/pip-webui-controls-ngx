@@ -1,0 +1,10 @@
+{
+  "en": "English",
+  "ru": "Russian",
+  "add_task": "Add task",
+  "import_tasks": "Import tasks",
+  "no_tasks": "No tasks for today!",
+  "search_placeholder": "Search...",
+  "tasks_description": "Tasks description",
+  "title": "Controls"
+}

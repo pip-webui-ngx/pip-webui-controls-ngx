@@ -7,7 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { PipPartModule } from 'pip-webui2-controls';
+import { PipPartModule } from 'pip-webui-controls-ngx';
 
 import { PipPartDirective } from './parts-name-example.directive';
 import { PartsExampleComponent } from './parts-example.component';
@@ -30,10 +30,9 @@ describe('PartsExampleComponent', () => {
         MatButtonModule,
         MatIconModule,
 
-        PipPartModule
+        PipPartModule,
       ],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

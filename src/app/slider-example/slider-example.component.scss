@@ -1,8 +1,13 @@
 :host {
-    pip-slider {
-        height: 128px;
-    }
-    ::ng-deep .mat-tab-label {
-        width: 25%;
-    }
+  padding: 16px;
+  display: block;
+  width: 100%;
+
+  pip-slider {
+    height: 128px;
+  }
+
+  ::ng-deep .mat-tab-label {
+    width: 25%;
+  }
 }

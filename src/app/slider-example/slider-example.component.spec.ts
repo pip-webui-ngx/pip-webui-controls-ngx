@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
-import { PipSliderModule } from 'pip-webui2-controls';
+import { PipSliderModule } from 'pip-webui-controls-ngx';
 
 import { SliderExampleComponent } from './slider-example.component';
 
@@ -14,16 +14,8 @@ describe('SliderExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [SliderExampleComponent],
-      imports: [
-        NoopAnimationsModule,
-        CommonModule,
-        FlexLayoutModule,
-        MatTabsModule,
-
-        PipSliderModule
-      ],
-    })
-      .compileComponents();
+      imports: [NoopAnimationsModule, CommonModule, FlexLayoutModule, MatTabsModule, PipSliderModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

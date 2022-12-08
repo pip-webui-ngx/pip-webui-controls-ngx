@@ -1,5 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
@@ -8,25 +7,24 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { TranslateModule } from '@ngx-translate/core';
-import { PipThemesModule } from 'pip-webui2-themes';
-
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { mstThemes, PipThemesModule, pipWebUI2ThemesList } from 'pip-webui-themes-ngx';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { CheckListExampleModule } from './check-list-example/check-list-example.module';
 import { ColorPickerExampleModule } from './color-picker-example/color-picker-example.module';
 import { EmptyStateExampleModule } from './empty-state-example/empty-state-example.module';
-import { JumbotronExampleModule } from './jumbotron-example/jumbotron-example.module';
 import { ExamplesListModule } from './examples-list/examples-list.module';
+import { JumbotronExampleModule } from './jumbotron-example/jumbotron-example.module';
 import { PartsExampleModule } from './parts-example/parts-example.module';
 import { RefListExampleModule } from './ref-list-example/ref-list-example.module';
 import { SearchInputExampleModule } from './search-input-example/search-input-example.module';
 import { SliderExampleModule } from './slider-example/slider-example.module';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -37,10 +35,9 @@ import { SliderExampleModule } from './slider-example/slider-example.module';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    TranslateModule.forRoot(),
-
-    PipThemesModule.forRoot(),
-
+    PipThemesModule.forRoot({
+      themes: [...pipWebUI2ThemesList, mstThemes['Elegant']],
+    }),
     AppRoutingModule,
     CheckListExampleModule,
     ColorPickerExampleModule,
@@ -50,9 +47,11 @@ import { SliderExampleModule } from './slider-example/slider-example.module';
     PartsExampleModule,
     RefListExampleModule,
     SearchInputExampleModule,
-    SliderExampleModule
+    SliderExampleModule,
+    HttpClientModule,
+    TranslocoRootModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,21 @@
+{
+  "name": "pip-webui-controls-ngx",
+  "version": "14.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pip-webui-ngx/pip-webui-controls-ngx"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/cdk": "^14.2.7",
+    "@angular/common": "^14.2.10",
+    "@angular/core": "^14.2.12",
+    "@angular/forms": "^14.2.10",
+    "@angular/material": "^14.2.7",
+    "pip-webui-pictures-ngx": "^14.0.0",
+    "rxjs": "~7.5.6"
+  }
+}

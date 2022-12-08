@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  cursor: pointer;
+
+  ::ng-deep pip-ref-item-actions {
+    display: flex;
+  }
+}
+
+.ref-item-overflow {
+  height: auto !important;
+
+  .pip-title,
+  .pip-subtitle {
+    white-space: normal !important;
+    text-overflow: unset;
+  }
+
+  ::ng-deep .mat-list-item-content {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

@@ -1,4 +1,10 @@
 <pip-empty-state>
-  <pip-empty-state-title text="No tasks for today!" subText="Task description" imageUrl="./assets/empty.svg"></pip-empty-state-title>
-  <pip-empty-state-actions [actions]="emptyStateActions"></pip-empty-state-actions>
+  <pip-empty-state-picture src="./assets/empty.svg"></pip-empty-state-picture>
+  <pip-empty-state-title>{{ 'no_tasks' | transloco }}</pip-empty-state-title>
+  <pip-empty-state-description>{{ 'tasks_description' | transloco }}</pip-empty-state-description>
+  <pip-empty-state-actions>
+    <button mat-raised-button *ngFor="let action of emptyStateActions" (click)="action.action()" color="primary">
+      {{ action.title | transloco }}
+    </button>
+  </pip-empty-state-actions>
 </pip-empty-state>

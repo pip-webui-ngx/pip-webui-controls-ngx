@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PipEmptyStateModule } from 'pip-webui2-controls';
-
+import { MatButtonModule } from '@angular/material/button';
+import { TranslocoModule } from '@ngneat/transloco';
+import { PipEmptyStateModule } from 'pip-webui-controls-ngx';
 import { EmptyStateExampleComponent } from './empty-state-example.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-
-    PipEmptyStateModule
-  ],
-  declarations: [EmptyStateExampleComponent]
+  imports: [CommonModule, PipEmptyStateModule, MatButtonModule, TranslocoModule],
+  declarations: [EmptyStateExampleComponent],
 })
-export class EmptyStateExampleModule { }
+export class EmptyStateExampleModule {}

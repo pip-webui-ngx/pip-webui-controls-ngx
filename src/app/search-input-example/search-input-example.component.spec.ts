@@ -8,9 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TranslateModule } from '@ngx-translate/core';
-import { PipSearchInputModule } from 'pip-webui2-controls';
-
+import { TranslocoTestingModule } from '@ngneat/transloco';
+import { PipSearchInputModule } from 'pip-webui-controls-ngx';
 import { SearchInputExampleComponent } from './search-input-example.component';
 
 describe('SearchInputExampleComponent', () => {
@@ -31,12 +30,10 @@ describe('SearchInputExampleComponent', () => {
         MatIconModule,
         MatTabsModule,
         MatAutocompleteModule,
-        TranslateModule.forRoot(),
-
-        PipSearchInputModule
+        TranslocoTestingModule,
+        PipSearchInputModule,
       ],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

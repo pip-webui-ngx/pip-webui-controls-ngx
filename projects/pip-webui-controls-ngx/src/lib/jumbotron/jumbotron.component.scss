@@ -1,0 +1,28 @@
+$jumbotron-padding: 24px;
+$jumbotron-color: rgba(0, 0, 0, 0.87);
+$jumbotron-bg: rgba(0, 0, 0, 0.08);
+$border-radius: 2px;
+:host.pip-jumbotron {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: $jumbotron-padding;
+  color: $jumbotron-color;
+  background-color: $jumbotron-bg;
+  box-sizing: border-box;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+:host-context(.pip-main-xs), :host-context(.pip-main-sm) {
+  display: block;
+  flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}

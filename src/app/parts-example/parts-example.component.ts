@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { PipPartService } from 'pip-webui2-controls';
+import { PipPartService } from 'pip-webui-controls-ngx';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-parts-example',
   templateUrl: './parts-example.component.html',
-  styleUrls: ['./parts-example.component.scss']
+  styleUrls: ['./parts-example.component.scss'],
 })
 export class PartsExampleComponent implements OnInit {
-
   public titlePartName = 'title';
   private _showTitle$ = new BehaviorSubject<boolean>(true);
 
@@ -28,8 +27,5 @@ export class PartsExampleComponent implements OnInit {
     });
   }
 
-  constructor(
-    private partService: PipPartService
-  ) { }
-
+  constructor(private partService: PipPartService) {}
 }

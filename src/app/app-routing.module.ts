@@ -11,21 +11,19 @@ import { SearchInputExampleComponent } from './search-input-example/search-input
 import { SliderExampleComponent } from './slider-example/slider-example.component';
 
 const appRoutes: Routes = [
-    { path: 'ref_list', component: RefListExampleComponent },
-    { path: 'check_list', component: CheckListExampleComponent },
-    { path: 'color_picker', component: ColorPickerExampleComponent },
-    { path: 'empty_state', component: EmptyStateExampleComponent },
-    { path: 'parts', component: PartsExampleComponent },
-    { path: 'jumbotron', component: JumbotronExampleComponent },
-    { path: 'slider', component: SliderExampleComponent },
-    { path: 'search_input', component: SearchInputExampleComponent },
-    { path: '**', redirectTo: 'ref_list' }
+  { path: 'ref_list', component: RefListExampleComponent },
+  { path: 'check_list', component: CheckListExampleComponent },
+  { path: 'color_picker', component: ColorPickerExampleComponent },
+  { path: 'empty_state', component: EmptyStateExampleComponent },
+  { path: 'parts', component: PartsExampleComponent },
+  { path: 'jumbotron', component: JumbotronExampleComponent },
+  { path: 'slider', component: SliderExampleComponent },
+  { path: 'search_input', component: SearchInputExampleComponent },
+  { path: '**', redirectTo: 'ref_list' },
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(appRoutes)
-    ],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

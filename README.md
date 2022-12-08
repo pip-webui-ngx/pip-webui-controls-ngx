@@ -16,8 +16,8 @@ Pip.WebUI.Controls modules provides controls mix
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/color-picker.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/color-picker.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/color-picker.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/color-picker.png"/>
 </a>
 
 ### Empty state
@@ -45,8 +45,8 @@ emptyStateActions: any[] = [
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/empty-state.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/empty-state.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/empty-state.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/empty-state.png"/>
 </a>
 
 ### Check item
@@ -71,8 +71,8 @@ emptyStateActions: any[] = [
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/check-item.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/check-item.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/check-item.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/check-item.png"/>
 </a>
 
 
@@ -96,8 +96,8 @@ emptyStateActions: any[] = [
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/jumbotron.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/jumbotron.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/jumbotron.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/jumbotron.png"/>
 </a>
 
 ### Slider
@@ -118,8 +118,8 @@ emptyStateActions: any[] = [
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/slider.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-controls/raw/master/doc/images/slider.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/slider.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-controls-ngx/raw/master/doc/images/slider.png"/>
 </a>
 
 ## Installation
@@ -127,7 +127,7 @@ emptyStateActions: any[] = [
 To install this module using npm:
 
 ```bash
-npm install pip-webui2-controls --save
+npm install pip-webui-controls-ngx --save
 ```
 
 ## <a name="license"></a>License

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommonModule } from '@angular/common';
-import { PipColorPickerModule } from 'pip-webui2-controls';
+import { PipColorPickerModule } from 'pip-webui-controls-ngx';
 
 import { ColorPickerExampleComponent } from './color-picker-example.component';
 
@@ -11,13 +11,8 @@ describe('ColorPickerExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ColorPickerExampleComponent],
-      imports: [
-        CommonModule,
-
-        PipColorPickerModule
-      ],
-    })
-      .compileComponents();
+      imports: [CommonModule, PipColorPickerModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -7,9 +7,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { TranslateModule } from '@ngx-translate/core';
-import { PipThemesModule } from 'pip-webui2-themes';
-
+import { TranslocoTestingModule } from '@ngneat/transloco';
+import { PipThemesModule } from 'pip-webui-themes-ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CheckListExampleModule } from './check-list-example/check-list-example.module';
@@ -25,9 +24,7 @@ import { SliderExampleModule } from './slider-example/slider-example.module';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
       imports: [
         NoopAnimationsModule,
         FlexLayoutModule,
@@ -37,10 +34,8 @@ describe('AppComponent', () => {
         MatIconModule,
         MatButtonModule,
         MatMenuModule,
-        TranslateModule.forRoot(),
-
+        TranslocoTestingModule,
         PipThemesModule.forRoot(),
-
         AppRoutingModule,
         CheckListExampleModule,
         ColorPickerExampleModule,
@@ -50,8 +45,8 @@ describe('AppComponent', () => {
         PartsExampleModule,
         RefListExampleModule,
         SearchInputExampleModule,
-        SliderExampleModule
-      ]
+        SliderExampleModule,
+      ],
     }).compileComponents();
   }));
   it('should create the app', async(() => {

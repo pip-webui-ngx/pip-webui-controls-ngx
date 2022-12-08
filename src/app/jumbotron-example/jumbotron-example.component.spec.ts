@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommonModule } from '@angular/common';
-import { PipJumbotronModule } from 'pip-webui2-controls';
+import { PipJumbotronModule } from 'pip-webui-controls-ngx';
 
 import { JumbotronExampleComponent } from './jumbotron-example.component';
 
@@ -11,13 +11,8 @@ describe('JumbotronExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [JumbotronExampleComponent],
-      imports: [
-        CommonModule,
-
-        PipJumbotronModule
-      ],
-    })
-      .compileComponents();
+      imports: [CommonModule, PipJumbotronModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,0 +1,10 @@
+{
+  "en": "Английский",
+  "ru": "Русский",
+  "add_task": "Новая задача",
+  "import_tasks": "Импорт задач",
+  "no_tasks": "На сегодня задач нет!",
+  "search_placeholder": "Найти...",
+  "tasks_description": "Описание задач",
+  "title": "Controls"
+}

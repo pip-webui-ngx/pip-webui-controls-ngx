@@ -7,9 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TranslateModule } from '@ngx-translate/core';
-import { PipSearchInputModule } from 'pip-webui2-controls';
-
+import { TranslocoModule } from '@ngneat/transloco';
+import { PipSearchInputModule } from 'pip-webui-controls-ngx';
 import { SearchInputExampleComponent } from './search-input-example.component';
 
 @NgModule({
@@ -23,10 +22,9 @@ import { SearchInputExampleComponent } from './search-input-example.component';
     MatIconModule,
     MatTabsModule,
     MatAutocompleteModule,
-    TranslateModule.forChild(),
-
-    PipSearchInputModule
+    TranslocoModule,
+    PipSearchInputModule,
   ],
-  declarations: [SearchInputExampleComponent]
+  declarations: [SearchInputExampleComponent],
 })
-export class SearchInputExampleModule { }
+export class SearchInputExampleModule {}

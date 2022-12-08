@@ -6,8 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { PipSelectedModule } from 'pip-webui2-behaviors';
-import { PipRefItemModule } from 'pip-webui2-controls';
+import { PipSelectableModule } from 'pip-webui-behaviors-ngx';
+import { PipRefItemModule } from 'pip-webui-controls-ngx';
 
 import { RefListExampleComponent } from './ref-list-example.component';
 
@@ -23,9 +23,9 @@ import { RefListExampleComponent } from './ref-list-example.component';
     MatToolbarModule,
 
     PipRefItemModule,
-    PipSelectedModule
+    PipSelectableModule,
   ],
   declarations: [RefListExampleComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class RefListExampleModule { }
+export class RefListExampleModule {}
