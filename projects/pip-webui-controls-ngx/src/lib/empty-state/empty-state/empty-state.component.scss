@@ -2,9 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  justify-content: center;
+
   ::ng-deep {
+    pip-empty-state-picture {
+      max-width: 250px !important;
+      width: 80%;
+      margin: 25px 25px 0;
+    }
     pip-empty-state-title{
-      margin-top: 50px;
+      padding: 16px;
     }
     pip-empty-state-description{
       margin-top: 16px;
@@ -13,7 +21,18 @@
       margin-bottom: 16px;
     }
     pip-empty-state-actions {
-      margin-top: 32px;
+      margin-top: 16px;
+      width: 100%;
+      display: flex;
+      -webkit-box-flex-direction: column;
+      -moz-box-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      align-content: center;
+      padding-bottom: 16px;
     }
   }
 }
